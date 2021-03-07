@@ -1,0 +1,112 @@
+---
+title: "Clipping sf objects into pieces for better maps"
+description: |
+  A short description of the post.
+author:
+  author: []
+date: 2021-02-19
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(mapbaltimore)
+library(ggplot2)
+
+set_map_theme()
+```
+
+```{r}
+area <- get_area(type = "neighborhood",
+                 area_name = "Downtown")
+
+clip_positions <- as.list(c("top", "right", "bottom", "left", "topright", "bottomright", "bottomleft", "topleft"))
+
+clips <- purrr::map(
+  clip_positions,
+  ~ clip_area(
+    area = area,
+    clip = .x)
+  )
+
+clip_plots <- purrr::map2(clips,
+                         clip_positions,
+           ~ ggplot(.x) +
+    geom_sf(fill = "blue", alpha = 0.25, color = NA) +
+    geom_sf(data = area, fill = NA, color = "black") +
+      labs(title = .y)
+    )
+
+clip_plots
+```
+
+
+```{r}
+edge_dists <- as.list(c(100, 50, 10, -10, -50, -100))
+
+edges <- purrr::map(
+  edge_dists,
+  ~ clip_area(
+    area = area,
+    clip = "edge",
+    edge_dist = .x)
+)
+
+edge_plots <- purrr::map2(
+  edges,
+  edge_dists,
+  ~ ggplot(.x) +
+    geom_sf(data = buffer_area(area, dist = 100), color = "orange") +
+    geom_sf(fill = "blue", alpha = 0.25, color = NA) +
+    geom_sf(data = area, fill = NA, color = "black") +
+    labs(title = .y)
+  )
+
+edge_plots
+```
+
+
+
+```{r}
+area_streets <- get_area_streets(area = area,
+                 diag_ratio = 0.25,
+                 union = TRUE)
+
+ggplot() +
+    layer_area_data(area = clips[[3]],
+                data = area_streets,
+                color = "red") +
+  layer_area_data(area = clips[[1]],
+                data = area_streets,
+                color = "blue") +
+  geom_sf(data = area,
+          size = 2,
+          fill = NA,
+          color = "black")
+
+
+```
+
+```{r}
+
+# common asp values
+asp_examples <- c(
+  1, # 1:1
+  1.2941, # 11:8.5
+  .7727, # 8.5:11
+  1.5, # 6:4
+  0.6667, # 4:6
+  1.7778, # 16:9
+  .5625, # 9:16
+  1.25, # 5:4
+  0.8, # 4:5
+  2, # 2:1
+  0.5 # 1:2
+)
+```
+
+
