@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Eli Pousson</title>
+    <link>https://elipousson.github.io</link>
+    <atom:link href="https://elipousson.github.io/index.xml" rel="self" type="application/rss+xml"/>
+    <description>Research and writing.
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Wed, 05 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Play is Not a Crime: A quick history of Baltimore's 'No Ball Playing' law</title>
+      <link>https://elipousson.github.io/posts/2020-02-05-no-ball-playing-repeal</link>
+      <description>Background history and testimony for CB18-0285.</description>
+      <category>testimony</category>
+      <guid>https://elipousson.github.io/posts/2020-02-05-no-ball-playing-repeal</guid>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://elipousson.github.io/posts/2020-02-05-no-ball-playing-repeal/images/1926-07-11-baltimore-playground-athletic-league-map.png" medium="image" type="image/png" width="3042" height="3578"/>
+    </item>
+    <item>
+      <title>Baltimore Data Day: How are people using data on Open Baltimore?</title>
+      <link>https://elipousson.github.io/posts/2018-07-13-open-baltimore</link>
+      <description>A presentation for Baltimore Data Day 2018.</description>
+      <category>presentation</category>
+      <guid>https://elipousson.github.io/posts/2018-07-13-open-baltimore</guid>
+      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
+      <media:content url="https://elipousson.github.io/posts/2018-07-13-open-baltimore/images/1s12943u-hotel-rennert-1896.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Deconstructing the recent history of demolition, parks, and public safety</title>
+      <link>https://elipousson.github.io/posts/2018-04-04-deconstructing-demolition</link>
+      <description>A recent history of what elected officials and residents say and do about vacant housing, demolition, and public safety in Baltimore.</description>
+      <category>research</category>
+      <guid>https://elipousson.github.io/posts/2018-04-04-deconstructing-demolition</guid>
+      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
+      <media:content url="https://c1.staticflickr.com/5/4657/39967230574_8546179ce1_b.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>The politics of 'tear it down'</title>
+      <link>https://elipousson.github.io/posts/2017-11-30-tear-it-down</link>
+      <description>Writing about the meaning and politics of demolition in Baltimore for the Vernacular Architectural Forum.</description>
+      <category>research</category>
+      <guid>https://elipousson.github.io/posts/2017-11-30-tear-it-down</guid>
+      <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
+      <media:content url="https://c1.staticflickr.com/5/4544/26974801349_a66233fa04_b.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Baltimore Data Day: Vacant housing, trash, and making data open in Harwood</title>
+      <link>https://elipousson.github.io/posts/2017-07-14-baltimore-data-day</link>
+      <description>This post is a slightly revised version of my lunchtime lightning talk at Baltimore Data Day 2017. Thanks to Ciara Christian for the opportunity to share my work around vacant housing, trash, and 311 data.</description>
+      <category>presentation</category>
+      <guid>https://elipousson.github.io/posts/2017-07-14-baltimore-data-day</guid>
+      <pubDate>Fri, 14 Jul 2017 00:00:00 +0000</pubDate>
+      <media:content url="https://elipousson.github.io/posts/2017-07-14-baltimore-data-day/images/2017-06-25_400-block-e-27th-street.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Who remembers Baltimore's Civil Rights heritage?</title>
+      <link>https://elipousson.github.io/posts/2017-07-10-civil-rights-heritage</link>
+      <description>It is not well to forget the past. Memory was given to man for some wise purpose. The past is the mirror in which we may discern the dim outlines of the future.</description>
+      <category>research</category>
+      <guid>https://elipousson.github.io/posts/2017-07-10-civil-rights-heritage</guid>
+      <pubDate>Tue, 11 Jul 2017 00:00:00 +0000</pubDate>
+      <media:content url="https://explore.baltimoreheritage.org/files/fullsize/8c6f9a096c81ae2b55ce0e75720ae347.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Researching Confederate monuments and Civil War memory at the Maryland Historical Society</title>
+      <link>https://elipousson.github.io/posts/2017-05-24-lord-baltimore-fellowship</link>
+      <description>A few weeks ago, I decided to apply for the Lord Baltimore Fellowship at the Maryland Historical Society to continue the research I started in 2015 on the history of Baltimore’s Confederate monuments and Civil War memory in Baltimore.</description>
+      <category>research</category>
+      <guid>https://elipousson.github.io/posts/2017-05-24-lord-baltimore-fellowship</guid>
+      <pubDate>Wed, 24 May 2017 00:00:00 +0000</pubDate>
+      <media:content url="https://explore.baltimoreheritage.org/files/original/6df377d4abc59f6d7fdd189dc6c5a530.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>How to plan a good walking tour</title>
+      <link>https://elipousson.github.io/posts/2017-03-07-tour-planning</link>
+      <description>This is my approach to planning a guided two-hour walking tour by making a map, creating a schedule, and writing notes.</description>
+      <guid>https://elipousson.github.io/posts/2017-03-07-tour-planning</guid>
+      <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -3,6 +3,7 @@ title: "Eli Pousson"
 description: |
   Research and writing.
 creative_commons: CC BY
+base_url: https://elipousson.github.io
 output_dir: "docs"
 twitter:
   site: "@elipousson"
