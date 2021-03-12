@@ -1,0 +1,440 @@
+---
+title: "Creating a photo key map and table with R"
+description: |
+  A complicated approach to make a simple map.
+date: 2021-03-06
+output:
+  distill::distill_article:
+    self_contained: false
+    mathjax: NULL
+    md_extensions:
+    implicit_figures: FALSE
+---
+
+A simple table of photos with a corresponding photo key map is a common type of figure for many different planning documents and reports. Typically, making this type of map can be a bit tedious: pulling a base map into Adobe Illustrator (or another graphics editor), marking the location of each photo on the map, and hoping you don't get anything mixed up.
+
+This post illustrates a reproducible process for making this style of map using R. Using the coordinates embedded in the photo metadata, you can make a map and then combine the map with an table showing each photo alongside a short description pulled from the embedded title or description. At the end, I show how you can use the same approach using photos from Flickr.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE)
+
+library(dplyr)
+library(ggplot2)
+library(gt)
+# library(ragg)
+
+fa <- rmarkdown::html_dependency_font_awesome()
+htmltools::tagList(fa)
+```
+
+## Check your photo metadata at the start 
+
+Get started by checking the location metadata attached to your photographs. By default, every photo you take with your cell phone saves your location when you took the photo to the [Exif metadata](https://en.wikipedia.org/wiki/Exif) attached to the image file. The accuracy of coordinates attached to photographs varies but you can you can check and update the location associated with the photograph using the [OSX Photos app](https://support.apple.com/guide/photos/view-photos-by-location-pht4c00b8ddc/mac) or a dedicated utility like [GeoTag](https://www.snafu.org/GeoTag/) for OSX or [GeoSetter](https://geosetter.de/en/main-en/) for Windows.
+
+I also used the Photos app to add a brief description to each image (as the title for each photo). You could also add titles or modify coordinates for one or more images *after* importing the image exif metadata by modifying the data frame.
+
+## Read the Exif metadata from photos with exiftoolr
+
+Once you have a folder of photos with locations and descriptions, you want to use the [exiftoolr](https://github.com/JoshOBrien/exiftoolr) package to import the image metadata. Josh OBrien describes this package as a wrapper around [ExifTool](https://exiftool.org/) "a comprehensive open source utility for reading, writing and editing meta information in a wide variety of files." You can use the `exiftoolr::install_exiftool` function to install ExifTool (if you don't have it installed already).
+
+For this example, I am using five photographs of Baltimore's Ellwood Park neighborhood. I added titles to each image in the Photos app then exported them to the `jpg` subfolder I created in the `image` folder for this post. The following code shows how to use `purrr::map_dfr` to import selected metadata for each image, sort the images by longitude, and then number the images in order.
+
+```{r exif_read}
+exif_table <-
+  purrr::map_dfr(
+  fs::dir_ls(path = "images", glob = "*.jpg"),
+  ~ exiftoolr::exif_read(
+    .x,
+    tags = c(
+      "SourceFile",
+      "DateCreated",
+      "Title",
+      "GPSImgDirection",
+      "GPSLatitude",
+      "GPSLongitude"
+    )
+  )
+) %>% 
+  # Rename variables
+  rename(
+    title = Title,
+    latitude = GPSLatitude,
+    longitude = GPSLongitude,
+    direction = GPSImgDirection,
+    date = DateCreated,
+    photo = SourceFile
+  ) %>%
+  # Sort by longitude
+  arrange(longitude) %>%
+  mutate(
+    # Number the images
+    number = row_number(),
+    # Remove city, state and zipcode from image title
+    title = stringr::str_remove(
+      title,
+      ",[:space:]Baltimore,[:space:]MD[:space:]212([:digit:]+)"
+    )
+  )
+```
+
+## Make a photo table with gt
+
+Now that we have the metadata for all of the images in a data frame, I can use [gt](https://gt.rstudio.com/) to display the images and descriptions in a simple HTML table.
+
+gt currently supports image columns created using local images, web images, or images created with ggplot. The example for the `local_image` helper function in the gt documentation is a bit unclear but I found a helpful example from a user on [Stackoverflow](https://stackoverflow.com/questions/61853488/how-can-i-create-the-correct-path-to-create-images-in-a-gt-table) that I adapted below.
+
+```{r image_table}
+# iPhone photos default to a 4:3 aspect ratio
+image_height <- 240
+image_width <- 320
+
+image_table <-
+  exif_table %>%
+  select(title, number, photo) %>%
+  gt() %>%
+  # Label columns
+  cols_label(
+    title = "Description",
+    number = "#",
+    photo = "Photo"
+  ) %>%
+  # Set photo column width
+  cols_width(
+    vars(photo) ~ px(image_width),
+    vars(number) ~ px(64)
+  ) %>%
+  # Set the font, weight, size, and alignment of the photo numbers
+  tab_style(
+    style = cell_text(
+      font = "Fira Code",
+      weight = "bolder",
+      size = "xlarge",
+      v_align = "top",
+      align = "center"
+    ),
+    locations = cells_body(columns = vars(number))
+  ) %>%
+  # Set vertical alignment for numbers and description
+  tab_style(
+    style = cell_text(
+      align = "right",
+      v_align = "top",
+      size = "large"
+    ),
+    locations = cells_body(columns = vars(title))
+  ) %>%
+  # Capitalize column headers
+  opt_all_caps()
+```
+
+I want the numbers in the table to match the style I plan to use for the key map so I am using the `html` helper function from gt to [stack the number on a FontAwesome circle icon](https://fontawesome.com/how-to-use/on-the-web/styling/stacking-icons).   
+
+```{r text_transform_number}
+image_table <- image_table %>%
+  # Replace file path to the jpg with the image
+  text_transform(
+    locations = cells_body(vars(number)),
+    fn = function(number) {
+      purrr::map(
+        number,
+        ~ html(
+          paste0(
+            '<span class="fa-stack">
+            <span class="fa fa-circle fa-stack-2x" style="color:#2f4f4f"></span>
+            <strong class="fa-stack-1x", style="color:#ffff00">',
+            .x,
+            "</strong></span>"
+          )
+        )
+      )
+    }
+  )
+```
+
+```{r text_transform_photo}
+image_table <- image_table %>%
+  # Replace file path to the jpg with the image
+  text_transform(
+    locations = cells_body(vars(photo)),
+    fn = function(x) {
+      purrr::map(x, ~ local_image(.x, height = image_height))
+    }
+  )
+
+image_table
+```
+
+One caution: this approach only works with images that have a consistent orientation and aspect ratio so mixing images with a mix portrait and landscape orientations will result in distorted images.
+
+## Make a key map with sf and snapbox
+
+Next, I can put the images onto a map. The first step to making the map is to convert the data frame containing the image Exif data into a simple features (sf) object and then transform the sf object to use a projected coordinate reference system (CRS).
+
+```{r exif_to_sf}
+exif_sf <-
+  exif_table %>%
+  # Convert to sf object
+  sf::st_as_sf(
+    coords = c("longitude", "latitude"),
+    crs = 4326
+  ) %>% 
+  # Convert to projected CRS
+  sf::st_transform(2804)
+```
+
+I'm transform the data to a projected CRS so I can use the [adjust_bbox](https://elipousson.github.io/mapbaltimore/reference/adjust_bbox.html) function from my own mapbaltimore package to define the map area. This function returns a bounding box that contains all of the photo locations with a little extra space (fifty meters) around the edges and a set aspect ratio (4 by 3).
+
+```{r map_area}
+map_area <-
+  mapbaltimore::adjust_bbox(
+    exif_sf,
+    dist = 50,
+    asp = "4:3",
+    crs = 3857)
+```
+
+The next step is to make the map base layer using the `layer_mapbox` function from the snapbox package. For this to work, you need to a [Mapbox API](https://docs.mapbox.com/api/overview/) key to pass to the function or to save it to your local environment with `Sys.setenv(MAPBOX_ACCESS_TOKEN = "x")` (substituting your own API key for x).
+^[If you want to use a base map that isn't available from Mapbox, you may want to take a look at the [ggmap](https://github.com/dkahle/ggmap) package which has a few more options. You can also make a custom basemaps using the [Mapbox studio](https://studio.mapbox.com/).]
+
+```{r image_map}
+image_map <-
+  ggplot() +
+  # Make satellite map background
+  snapbox::layer_mapbox(
+    area = map_area, # map_area
+    retina = TRUE,
+    map_style = snapbox::mapbox_satellite()
+  ) +
+  inlegend::theme_cropped_map()
+```
+
+I could have used the buffer parameter built in to  [snapbox](https://github.com/anthonynorth/snapbox) package but it doesn't currently let you set the aspect ratio for the map area.
+
+Now I can mark the location of each photograph with the corresponding number on top of the base map. Sorting by latitude or longitude before numbering the images is one easy way to make the number placement predictable.^[I ordered these photos by longitude so, in Baltimore, the numbers appear on the map in order from left to right. If I sorted in descending order by latitude instead, the numbers would have appeared on the map from top to bottom.]
+
+```{r image_map_label}
+image_map_label <- image_map +
+  # Add markers for locations from exif data
+  geom_sf_label(
+    data = exif_sf,
+    aes(label = number),
+    fill = "yellow",
+    color = "darkslategray",
+    size = 5,
+    label.size = 0.0,
+    label.padding = unit(0.45, "lines"),
+    label.r = unit(0.8, "lines"),
+    hjust = 0.5,
+    vjust = 0.5,
+    family = "Fira Code SemiBold"
+  )
+
+image_map_label
+```
+
+There are other ways to label the key map. For example, I could use the the exif data again to show where direction I was facing when I took each photo and use the `geom_label_repel` from the ggrepel package to offset the location of the numbers.
+
+```{r image_map_label_repel, code_folding = "hide"}
+image_map_label_repel <- 
+  image_map +
+  # Add the number labels
+  ggrepel::geom_label_repel(
+    data = exif_sf,
+    aes(label = number,
+        geometry = geometry),
+    stat = "sf_coordinates",
+    size = 5,
+    fill = "yellow",
+    color = "darkslategray",
+    label.size = 0.0,
+    label.padding = 0.45,
+    label.r = 0.8,
+    hjust = 0.5,
+    vjust = 0.5,
+    family = "Fira Code SemiBold",
+    segment.size = 1.35,
+    segment.color = "yellow",
+    min.segment.length = 0,
+    nudge_y = 40,
+    direction = "y"
+    ) +
+  # Add markers for locations from exif data
+  geom_sf(
+    data = exif_sf,
+    size = 6,
+    color = "yellow"
+    ) +
+  geom_sf_text(
+    data = exif_sf,
+    aes(angle = direction * -1),
+    label = "⬆",
+    size = 4,
+    hjust = 0.5,
+    vjust = 0.5,
+    color = "darkslategray",
+    family = "Fira Code SemiBold"
+    )
+
+image_map_label_repel
+```
+
+The offset numbers could definitely be appropriate if you have image locations clustered too close together but the combined effect with the directional arrows looks too busy. I decided to stick with the simple approach for this example.
+
+## Combine the key map and photo table
+
+The last step is to combine the photo table and the key map into a single combined figure. I used the `ggplot_image` function to insert the image in lieu of a subtitle for the table.
+
+```{r combine_key_map_table}
+image_table %>%
+  tab_header(
+    title = "Ellwood Park: Photos and Key Map",
+    subtitle = html(
+      ggplot_image(image_map_label, height = 480)
+    )
+  ) %>%
+  # Set width of table and make
+  tab_options(
+    table.width = 640,
+    heading.title.font.weight = "bolder"
+  )
+```
+
+## Making a key map and table with images from Flickr
+
+This same process works well with photographs from Flickr—again provided that those photos have a location and have titles that you can use as the description in your image table.
+
+To start, I took the code I used to make the map and the table and turned into two functions: `make_key_map` and `make_flickr_key_table`.
+
+```{r make_key_map, code_folding = "hide"}
+make_key_map <- function(x,
+                         dist = NULL,
+                         asp = NULL) {
+  key_map <- ggplot() +
+    snapbox::layer_mapbox(
+      area = mapbaltimore::adjust_bbox(
+        x,
+        dist = dist,
+        asp = asp
+      ),
+      retina = TRUE,
+      map_style = snapbox::mapbox_satellite()
+    ) +
+    inlegend::theme_cropped_map()
+
+  key_map <- key_map +
+      geom_sf_label(
+        data = x,
+        aes(label = number),
+        fill = "yellow",
+        color = "darkslategray",
+        size = 5,
+        label.size = unit(0.0, "lines"),
+        label.padding = unit(0.45, "lines"),
+        label.r = unit(0.8, "lines"),
+        family = "Fira Code SemiBold"
+      )
+
+  return(key_map)
+}
+
+make_flickr_key_table <- function(x, table_title = NULL) {
+  x %>% 
+   sf::st_drop_geometry() %>%
+  gt() %>%
+  cols_label(
+    title = "Description",
+    number = "#",
+    photo = "Photo"
+  ) %>%
+  text_transform(
+    locations = cells_body(vars(photo)),
+    fn = function(photo) {
+      purrr::map(photo, ~ web_image(.x, height = 240))
+    }
+  ) %>%
+  cols_width(
+    vars(photo) ~ px(320),
+        vars(number) ~ px(64)
+  ) %>%
+  tab_style(
+    style = cell_text(
+      font = "Fira Code",
+      weight = "bolder",
+      size = "xlarge",
+      v_align = "top",
+      align = "center"
+    ),
+    locations = cells_body(columns = vars(number))
+  ) %>%
+  tab_style(
+    style = cell_text(
+      align = "right",
+      size = "large",
+      v_align = "top"
+    ),
+    locations = cells_body(columns = vars(title))
+  ) %>%
+  opt_all_caps() %>% 
+  tab_header(
+    title = table_title,
+    subtitle = html(
+      ggplot_image(
+        make_key_map(x, dist = 50, asp = "4:3"), height = 480)
+    )
+  ) %>%
+  tab_options(
+    table.width = 640,
+    heading.title.font.weight = "bolder"
+  )
+}
+```
+
+Getting the photos from Flickr requires both the [FlickrAPI package](https://github.com/elipousson/FlickrAPI/)^[There is a small bug with the getPhotoSearch function in the main repository for this package so I recommend installing my version if you want to run a version of the code below. I'll update this post once I make a pull request and get the bug fixed in the main repository.] and a [Flickr API key](https://www.flickr.com/services/apps/create/apply). You can save the key to the local environment with `Sys.setenv(FLICKR_ACCESS_TOKEN = "x")` (again substituting your own API key for x). I'm using the `getPhotoSearch` function to pull images from the [Baltimore Heritage Flickr account](https://www.flickr.com/photos/baltimoreheritage/) tagged with the Eager Park, Ellwood Park, or McElderry Park neighborhood names.
+
+```{r flickr}
+# remotes::install_github("elipousson/FlickrAPI")
+library(FlickrAPI)
+
+flickr_photos <- getPhotoSearch(
+  api_key = Sys.getenv("FLICKR_ACCESS_TOKEN"),
+  user_id = "baltimoreheritage",
+  tags = c("mcelderrypark", "ellwoodpark"),
+  extras = c("geo", "url_m"))
+```
+
+Next I convert the data frame of Flickr photos into a sf object. I'm randomly selecting 5 photos from the three neighborhoods making sure only to select landscape oriented images with an associated location.
+
+```{r flickr_photos_sf}
+flickr_photos_sf <- flickr_photos %>%
+  # Filter to landscape oriented images with coordinates
+  filter(!is.na(latitude),
+         width_m == 500) %>%
+  # Sample 5 random images
+  sample_n(5) %>%
+  arrange(longitude) %>%
+  mutate(
+    number = row_number(),
+    title = stringr::str_remove(
+      title,
+      ",[:space:]Baltimore,[:space:]MD[:space:]212[:digit:]+")
+    ) %>%
+  sf::st_as_sf(
+    coords = c("longitude", "latitude"),
+    agr = "constant",
+    crs = 4326
+  ) %>%
+  sf::st_transform(2804) %>%
+  select(title, number, photo = url_m)
+```
+
+Finally, I call the `make_flickr_key_table` function on the sf object. I didn't include the Font Awesome icons for the numbers in this version  of the table but it still looks good to me.
+
+```{r flickr_photos_table}
+flickr_photos_table <- flickr_photos_sf %>%
+  make_flickr_key_table(table_title = "East Baltmore: Photos and Key Map")
+
+flickr_photos_table
+```
+

@@ -2,9 +2,8 @@
 title: "Clipping sf objects into pieces for better maps"
 description: |
   A short description of the post.
-author:
-  author: []
 date: 2021-02-19
+draft: true
 output:
   distill::distill_article:
     self_contained: false

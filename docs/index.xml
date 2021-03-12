@@ -7,7 +7,15 @@
     <description>Research and writing.
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 05 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Creating a photo key map and table with R</title>
+      <link>https://elipousson.github.io/posts/2021-03-06-creating-a-key-map-for-photographs-with-r</link>
+      <description>A complicated approach to make a simple map.</description>
+      <guid>https://elipousson.github.io/posts/2021-03-06-creating-a-key-map-for-photographs-with-r</guid>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://elipousson.github.io/posts/2021-03-06-creating-a-key-map-for-photographs-with-r/creating-a-key-map-for-photographs-with-r_files/figure-html5/image_map_label-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>Play is Not a Crime: A quick history of Baltimore's 'No Ball Playing' law</title>
       <link>https://elipousson.github.io/posts/2020-02-05-no-ball-playing-repeal</link>
