@@ -91,6 +91,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <meta property="description" itemprop="description" content="A personal website for research and writing."/>
 
+  <link rel="canonical" href="https://elipousson.github.io"/>
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
 
 
@@ -98,6 +99,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <meta property="og:title" content="Eli Pousson"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="A personal website for research and writing."/>
+  <meta property="og:url" content="https://elipousson.github.io"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Eli Pousson"/>
 
@@ -105,13 +107,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Eli Pousson"/>
   <meta property="twitter:description" content="A personal website for research and writing."/>
+  <meta property="twitter:url" content="https://elipousson.github.io"/>
   <meta property="twitter:site" content="@elipousson"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Eli Pousson"]},{"type":"character","attributes":{},"value":["A personal website for research and writing.\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site","canonical_url","listing"]}},"value":[{"type":"character","attributes":{},"value":["Eli Pousson"]},{"type":"character","attributes":{},"value":["A personal website for research and writing.\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["https://elipousson.github.io"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2127,6 +2130,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* This must remain at the top of this file.                 */
   @import url('https://fonts.googleapis.com/css2?family=Public+Sans');
   @import url('https://fonts.googleapis.com/css2?family=Fira+Mono');
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code');
+
 
 
 
@@ -2528,7 +2533,7 @@ function init_posts_list() {
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="Eli Pousson">Eli Pousson</h1>
 <a href="posts/2021-03-06-creating-a-key-map-for-photographs-with-r/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<script class="post-metadata" type="text/json">{"categories":["mapping","R"]}</script>
 <div class="metadata">
 <div class="publishedDate">March 6, 2021</div>
 <div class="dt-authors"></div>
@@ -2538,7 +2543,10 @@ function init_posts_list() {
 </div>
 <div class="description">
 <h2>Creating a photo key map and table with R</h2>
-<div class="dt-tags"></div>
+<div class="dt-tags">
+<div class="dt-tag">mapping</div>
+<div class="dt-tag">R</div>
+</div>
 <p>A complicated approach to make a simple map.</p>
 </div>
 </a>
@@ -2682,12 +2690,20 @@ function init_posts_list() {
 <h3>Categories</h3>
 <ul>
 <li>
-<a href="#category:articles">articles</a>
+<a href="#category:Articles">Articles</a>
 <span class="category-count">(9)</span>
+</li>
+<li>
+<a href="#category:mapping">mapping</a>
+<span class="category-count">(1)</span>
 </li>
 <li>
 <a href="#category:presentation">presentation</a>
 <span class="category-count">(2)</span>
+</li>
+<li>
+<a href="#category:R">R</a>
+<span class="category-count">(1)</span>
 </li>
 <li>
 <a href="#category:research">research</a>

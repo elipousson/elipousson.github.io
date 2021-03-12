@@ -3,6 +3,9 @@ title: "Creating a photo key map and table with R"
 description: |
   A complicated approach to make a simple map.
 date: 2021-03-06
+categories:
+  - mapping
+  - R
 output:
   distill::distill_article:
     self_contained: false
@@ -140,12 +143,11 @@ image_table <- image_table %>%
       purrr::map(
         number,
         ~ html(
-          paste0(
-            '<span class="fa-stack">
-            <span class="fa fa-circle fa-stack-2x" style="color:#2f4f4f"></span>
-            <strong class="fa-stack-1x", style="color:#ffff00">',
-            .x,
-            "</strong></span>"
+          paste0('<span class="fa-stack">
+                 <span class="fa fa-circle fa-stack-2x" style="color:#2f4f4f"></span>
+                 <strong class="fa-stack-1x", style="color:#ffff00">',
+                 .x,
+                 '</strong></span>'
           )
         )
       )
