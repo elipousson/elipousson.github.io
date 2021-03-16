@@ -2,7 +2,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
     <title>Eli Pousson</title>
-    <link>https://elipousson.github.io</link>
+    <link>https://elipousson.github.io/</link>
     <atom:link href="https://elipousson.github.io/index.xml" rel="self" type="application/rss+xml"/>
     <description>Research and writing.
 </description>
