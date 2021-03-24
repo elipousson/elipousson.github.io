@@ -7,7 +7,17 @@
     <description>Research and writing.
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Making a map of libraries around my neighborhood</title>
+      <link>https://elipousson.github.io/posts/2021-03-23-mapping-libraries-near-me</link>
+      <description>Making a map to celebrate the safe reopening of Baltimore's Enoch Pratt Free Library and visit more libraries around Harwood this spring.</description>
+      <category>mapping</category>
+      <category>R</category>
+      <guid>https://elipousson.github.io/posts/2021-03-23-mapping-libraries-near-me</guid>
+      <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://elipousson.github.io/posts/2021-03-23-mapping-libraries-near-me/images/2021-03-20_pratt-library-clifton-branch.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Creating a photo key map and table with R</title>
       <link>https://elipousson.github.io/posts/2021-03-06-creating-a-key-map-for-photographs-with-r</link>
