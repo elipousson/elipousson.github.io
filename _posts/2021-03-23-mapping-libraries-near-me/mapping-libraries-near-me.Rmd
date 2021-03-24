@@ -137,11 +137,20 @@ nudge <- 275
 # Reduce the text size
 update_geom_defaults("text", list(size = 2.75))
 
-layer_libraries_e <- geom_sf_text(data = libraries_e, aes(label = stringr::str_to_upper(name)), nudge_x = nudge, nudge_y = nudge*-1, angle = -45, hjust = 0)
+layer_libraries_e <- geom_sf_text(
+  data = libraries_e,
+  aes(label = stringr::str_to_upper(name)),
+  nudge_x = nudge, nudge_y = nudge*-1, angle = -45, hjust = 0)
 
-layer_libraries_nw <- geom_sf_text(data = libraries_nw, aes(label = stringr::str_to_upper(name)), nudge_x = nudge*-1, nudge_y = nudge, angle = -45, hjust = 1) 
+layer_libraries_nw <- geom_sf_text(
+  data = libraries_nw,
+  aes(label = stringr::str_to_upper(name)),
+  nudge_x = nudge*-1, nudge_y = nudge, angle = -45, hjust = 1) 
 
-layer_libraries_s <- geom_sf_text(data = libraries_s, aes(label = stringr::str_to_upper(name)), nudge_x = nudge*-1, nudge_y = nudge*-1, angle = 45, hjust = 1) 
+layer_libraries_s <- geom_sf_text(
+  data = libraries_s,
+  aes(label = stringr::str_to_upper(name)),
+  nudge_x = nudge*-1, nudge_y = nudge*-1, angle = 45, hjust = 1) 
 
 ggplot() +
   # Add labels
