@@ -7,7 +7,18 @@
     <description>Research and writing.
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 23 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Taking down bandit signs in Baltimore</title>
+      <link>https://elipousson.github.io/posts/2021-10-22-taking-down-bandit-signs-in-baltimore</link>
+      <description>Why do I take down 'We Buy Houses' signs and where do I find them? How do my experiences with signs compare to city 311 data?</description>
+      <category>mapping</category>
+      <category>R</category>
+      <category>housing</category>
+      <guid>https://elipousson.github.io/posts/2021-10-22-taking-down-bandit-signs-in-baltimore</guid>
+      <pubDate>Thu, 21 Oct 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://elipousson.github.io/posts/2021-10-22-taking-down-bandit-signs-in-baltimore/taking-down-bandit-signs-in-baltimore_files/figure-html5/make_area_map-1.png" medium="image" type="image/png" width="1200" height="1200"/>
+    </item>
     <item>
       <title>Making a map of libraries around my neighborhood</title>
       <link>https://elipousson.github.io/posts/2021-03-23-mapping-libraries-near-me</link>

@@ -6,7 +6,7 @@
       "description": "A personal website for Eli Pousson.",
       "author": [],
       "contents": "\nHello! My name is Eli Pousson. I am a planner and program coordinator with the Neighborhood Design Center, a Fellow with the Johns Hopkins University School of Public Health Bloomberg American Health Initiative, and local historian in Baltimore, Maryland.\nI’m currently working a few R packages for mapping and analyzing data related to Baltimore City:\nmapbaltimore\nbcpss\nbaltimoredata\nI recently completed Master’s of Public Health degree at Johns Hopkins University. My work during the program included completed an analysis of 311 requests for basement sewage backups in Baltimore and advocacy for the creation of Baltimore’s Slow Streets program in early 2020.\nHere are a few projects from my prior work at Baltimore Heritage:\nExplore Baltimore Heritage\nBaltimore’s Civil Rights Landmarks\n\n\n\n",
-      "last_modified": "2021-03-24T01:34:04-04:00"
+      "last_modified": "2021-06-25T23:33:19-04:00"
     },
     {
       "path": "index.html",
@@ -14,7 +14,7 @@
       "description": "A personal website for research and writing.\n",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-03-24T01:34:06-04:00"
+      "last_modified": "2021-06-25T23:33:19-04:00"
     }
   ],
   "collections": ["posts/posts.json"]
