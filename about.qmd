@@ -1,0 +1,41 @@
+---
+title: "About"
+image: files/profile.jpeg
+about:
+  template: solana
+  links:
+    - icon: mastodon
+      text: Mastodon
+      href: https://dads.cool/@elipousson
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/elipousson
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/elipousson
+    - icon: github
+      text: Github
+      href: https://github.com/elipousson
+---
+
+Hello! My name is Eli Pousson. I am a planner and program coordinator with the [Baltimore City Department of Planning](https://planning.baltimorecity.gov/), a former non-profit worker at [Baltimore Heritage](https://baltimoreheritage.org/) and the Neighborhood Design Center, a teacher for the [University of Maryland Baltimore County (UMBC) GIS Certificate Program](https://professionalprograms.umbc.edu/geographic-information-systems/), and local historian in Baltimore, Maryland.
+
+Since 2020, I've been an enthusiastic R package developer. I've created several R packages for mapping and analyzing data related to Baltimore City and Maryland:
+
+- [mapbaltimore](https://elipousson.github.io/mapbaltimore/)
+- [bcpss](https://elipousson.github.io/bcpss/)
+- [mapmaryland](https://elipousson.github.io/mapmaryland/)
+
+I've also created (or made big contributions) to a few packages for working with spatial data or accessing useful APIs:
+
+- [sfext](https://elipousson.github.io/sfext/)
+- [getdata](https://elipousson.github.io/getdata/)
+- [esri2f](https://github.com/elipousson/esri2sf)
+- [crashapi](https://elipousson.github.io/crashapi/)
+
+In 2020, I completed Master’s of Public Health degree at Johns Hopkins University as a Fellow with the Johns Hopkins University School of Public Health Bloomberg American Health Initiative. My work during the program included completed [an analysis of 311 requests](https://elipousson.github.io/sewage-backups/index.html) for basement sewage backups in Baltimore and advocacy for the creation of Baltimore’s Slow Streets program in early 2020.
+
+Here are a few projects from my prior work at [Baltimore Heritage](https://baltimoreheritage.org/):
+
+- [Explore Baltimore Heritage](https://explore.baltimoreheritage.org/)
+- [Baltimore’s Civil Rights Landmarks](https://baltimoreheritage.github.io/civil-rights-heritage/)

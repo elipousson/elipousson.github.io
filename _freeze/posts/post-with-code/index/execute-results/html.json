@@ -1,0 +1,14 @@
+{
+  "hash": "f5922b6e5642a27a5784f93c524f0c18",
+  "result": {
+    "markdown": "---\ntitle: \"Post With Code\"\nauthor: \"Harlow Malloc\"\ndate: \"7/14/2022\"\ncategories: [news, code, analysis]\nimage: \"image.jpg\"\n---\n\nThis is a post with executable code.\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": [],
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": null
+  }
+}

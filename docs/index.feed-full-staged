@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Eli Pousson</title>
+<link>https://elipousson.github.io/index.html</link>
+<atom:link href="https://elipousson.github.io/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.3.340</generator>
+<lastBuildDate>Thu, 21 Oct 2021 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/posts/2021-10-22-taking-down-bandit-signs-in-baltimore/index.html}</title>
+  <dc:creator>Eli Pousson</dc:creator>
+  <link>https://elipousson.github.io/posts/2021-10-22-taking-down-bandit-signs-in-baltimore/index.html</link>
+  <description>{B4F502887207:/posts/2021-10-22-taking-down-bandit-signs-in-baltimore/index.html}</description>
+  <category>mapping</category>
+  <category>R</category>
+  <category>housing</category>
+  <guid>https://elipousson.github.io/posts/2021-10-22-taking-down-bandit-signs-in-baltimore/index.html</guid>
+  <pubDate>Thu, 21 Oct 2021 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/2021-03-23-mapping-libraries-near-me/index.html}</title>
+  <dc:creator>Eli Pousson</dc:creator>
+  <link>https://elipousson.github.io/posts/2021-03-23-mapping-libraries-near-me/index.html</link>
+  <description>{B4F502887207:/posts/2021-03-23-mapping-libraries-near-me/index.html}</description>
+  <category>mapping</category>
+  <category>R</category>
+  <guid>https://elipousson.github.io/posts/2021-03-23-mapping-libraries-near-me/index.html</guid>
+  <pubDate>Tue, 23 Mar 2021 04:00:00 GMT</pubDate>
+  <media:content url="https://elipousson.github.io/posts/2021-03-23-mapping-libraries-near-me/images/2021-03-20_pratt-library-clifton-branch.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/2021-03-06-creating-a-key-map-for-photographs-with-r/index.html}</title>
+  <dc:creator>Eli Pousson</dc:creator>
+  <link>https://elipousson.github.io/posts/2021-03-06-creating-a-key-map-for-photographs-with-r/index.html</link>
+  <description>{B4F502887207:/posts/2021-03-06-creating-a-key-map-for-photographs-with-r/index.html}</description>
+  <category>mapping</category>
+  <category>R</category>
+  <guid>https://elipousson.github.io/posts/2021-03-06-creating-a-key-map-for-photographs-with-r/index.html</guid>
+  <pubDate>Sat, 06 Mar 2021 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>{B4F502887207:/posts/2018-07-13-open-baltimore/index.html}</title>
+  <dc:creator>Eli Pousson</dc:creator>
+  <link>https://elipousson.github.io/posts/2018-07-13-open-baltimore/index.html</link>
+  <description>{B4F502887207:/posts/2018-07-13-open-baltimore/index.html}</description>
+  <category>presentation</category>
+  <guid>https://elipousson.github.io/posts/2018-07-13-open-baltimore/index.html</guid>
+  <pubDate>Fri, 13 Jul 2018 04:00:00 GMT</pubDate>
+  <media:content url="https://elipousson.github.io/posts/2018-07-13-open-baltimore/images/1s12943u-hotel-rennert-1896.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/2018-04-04-deconstructing-demolition/index.html}</title>
+  <dc:creator>Eli Pousson</dc:creator>
+  <link>https://elipousson.github.io/posts/2018-04-04-deconstructing-demolition/index.html</link>
+  <description>{B4F502887207:/posts/2018-04-04-deconstructing-demolition/index.html}</description>
+  <category>research</category>
+  <guid>https://elipousson.github.io/posts/2018-04-04-deconstructing-demolition/index.html</guid>
+  <pubDate>Wed, 04 Apr 2018 04:00:00 GMT</pubDate>
+  <media:content url="https://c1.staticflickr.com/5/4657/39967230574_8546179ce1_b.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/2017-11-30-tear-it-down/index.html}</title>
+  <dc:creator>Eli Pousson</dc:creator>
+  <link>https://elipousson.github.io/posts/2017-11-30-tear-it-down/index.html</link>
+  <description>{B4F502887207:/posts/2017-11-30-tear-it-down/index.html}</description>
+  <category>research</category>
+  <guid>https://elipousson.github.io/posts/2017-11-30-tear-it-down/index.html</guid>
+  <pubDate>Thu, 30 Nov 2017 05:00:00 GMT</pubDate>
+  <media:content url="https://c1.staticflickr.com/5/4544/26974801349_a66233fa04_b.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/2017-07-14-baltimore-data-day/index.html}</title>
+  <dc:creator>Eli Pousson</dc:creator>
+  <link>https://elipousson.github.io/posts/2017-07-14-baltimore-data-day/index.html</link>
+  <description>{B4F502887207:/posts/2017-07-14-baltimore-data-day/index.html}</description>
+  <category>presentation</category>
+  <guid>https://elipousson.github.io/posts/2017-07-14-baltimore-data-day/index.html</guid>
+  <pubDate>Fri, 14 Jul 2017 04:00:00 GMT</pubDate>
+  <media:content url="https://elipousson.github.io/posts/2017-07-14-baltimore-data-day/images/2017-06-25_400-block-e-27th-street.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/2017-07-10-civil-rights-heritage/index.html}</title>
+  <dc:creator>Eli Pousson</dc:creator>
+  <link>https://elipousson.github.io/posts/2017-07-10-civil-rights-heritage/index.html</link>
+  <description>{B4F502887207:/posts/2017-07-10-civil-rights-heritage/index.html}</description>
+  <category>research</category>
+  <guid>https://elipousson.github.io/posts/2017-07-10-civil-rights-heritage/index.html</guid>
+  <pubDate>Tue, 11 Jul 2017 04:00:00 GMT</pubDate>
+  <media:content url="https://elipousson.github.io/posts/2017-07-10-civil-rights-heritage/images/2016-04-06_union-baptist-church.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/2017-05-24-lord-baltimore-fellowship/index.html}</title>
+  <dc:creator>Eli Pousson</dc:creator>
+  <link>https://elipousson.github.io/posts/2017-05-24-lord-baltimore-fellowship/index.html</link>
+  <description>{B4F502887207:/posts/2017-05-24-lord-baltimore-fellowship/index.html}</description>
+  <category>research</category>
+  <guid>https://elipousson.github.io/posts/2017-05-24-lord-baltimore-fellowship/index.html</guid>
+  <pubDate>Wed, 24 May 2017 04:00:00 GMT</pubDate>
+  <media:content url="https://explore.baltimoreheritage.org/files/original/6df377d4abc59f6d7fdd189dc6c5a530.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/posts/2017-03-07-tour-planning/index.html}</title>
+  <dc:creator>Eli Pousson</dc:creator>
+  <link>https://elipousson.github.io/posts/2017-03-07-tour-planning/index.html</link>
+  <description>{B4F502887207:/posts/2017-03-07-tour-planning/index.html}</description>
+  <category>teaching</category>
+  <guid>https://elipousson.github.io/posts/2017-03-07-tour-planning/index.html</guid>
+  <pubDate>Tue, 07 Mar 2017 05:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

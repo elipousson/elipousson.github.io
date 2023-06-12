@@ -1,0 +1,21 @@
+Description: Personal website for Eli Pousson.
+Imports: 
+    dplyr,
+    ggplot2,
+    glue,
+    janitor,
+    lubridate,
+    magick,
+    mapbaltimore,
+    patchwork,
+    purrr,
+    ragg,
+    readr,
+    sf,
+    sfext,
+    stringr,
+    tidyr
+Remotes: 
+    elipousson/mapbaltimore,
+    elipousson/sfext
+Encoding: UTF-8

@@ -1,0 +1,14 @@
+{
+  "hash": "f70fea8c9e7a5fcf09f869a98f724845",
+  "result": {
+    "markdown": "---\ntitle: \"How to map your neighborhood using the {overedge} and {birdseyeview} R packages\"\ndate: \"2022-03-06\"\n---\n\n\n## Introduction\n\n-   Background\n\n    -   Flickr photos for Baltimore Heritage and demolition data\n    -   311 reports\n    -   Public art database in Airtable and in Open Street Map\n\n-   Work\n\n    -   Visualization\n    -   Advocacy\n    -   Decision-making support\n\n-   Packages\n\n    -   overedge\n    -   birdseyeview (new)\n\n## Why another package\n\n-   Many packages doing many different things can be difficult to navigate\n\n-   Reduce complexity of code when creating basic maps/visualizations\n\n-   Increase adaptability of code to facilitate quick response (e.g. [Mondawmin](https://twitter.com/elipousson/status/1366578889158516738))\n\n-   Challenge bad data analysis (e.g. [The Block](https://twitter.com/elipousson/status/1485457434042937348))\n\n-   Difficult of adapting\n\n-   Goals for new packages\n\n    -   Fast to use and adapt at different scales\n    -   Consistent and interoperable with common packages (sf, ggplot2, gt, tigris, mapboxapi)\n    -   Use and promote open data practices\n\n-   What do new packages do\n\n    -   overedge\n    -   birdseyeview\n\n-   Contributors welcome\n\n### Many packages doing many different things\n\n-   Data presentation (mapping, visualization, tables, etc.) packages\n\n    -   ggplot2\n    -   tmap\n    -   gt\n\n-   Packages that extend a presentation package\n\n    -   gtsummary\n    -   ggrepel\n\n-   Data management packages\n\n    -   sf\n    -   readr\n\n-   Data packages\n\n    -   naturalearth\n\n-   API packages\n\n    -   osmdata\n    -   tidygeocoder\n\n-   Place-specific data packages\n\n    -   U.S. specific\n\n        -   tigris\n        -   tidycensus\n        -   [lehdr](https://jamgreen.github.io/lehdr/index.html) ([repo](https://github.com/jamgreen/lehdr))\n        -   [educationdata](https://urbaninstitute.github.io/education-data-package-r/) ([repo](https://github.com/UrbanInstitute/education-data-package-r))\n\n    -   U.S. state specific\n\n        -   wicrash\n\n    -   Other country specific\n\n        -   \n\n    -   City\n\n        -   bcpss\n\n## What I'm making:\n\n-   Place-specific data packages\n\n    -   mapbaltimore (also includes place-specific API access)\n    -   bcpss\n    -   baltimoredata\n\n-   Improved location support in API packages\n\n    -   crashapi\n\n    -   esri2sf\n\n    -   FlickrAPI\n\n-   Utilities for working with this data\n\n    -   overedge\n\n    -   birdseyeview\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,12 @@
+---
+title: "Eli Pousson"
+subtitle: "Research and writing on Baltimore, Maryland and other places."
+listing:
+  feed: true
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+page-layout: full
+title-block-banner: true
+---

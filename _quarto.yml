@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Eli Pousson"
+  favicon: files/favicon-512x512.png
+  twitter-card: true
+  site-url: https://elipousson.github.io
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/elipousson
+      - icon: mastodon
+        href: https://dads.cool/@elipousson
+      - icon: twitter
+        href: https://twitter.com/elipousson
+
+format:
+  html:
+    theme: litera
+    css: styles.css
+
+editor: visual
+
