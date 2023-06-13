@@ -83,4 +83,3 @@ What can we take away from this recent history and the much longer history that 
 -   Consistent location data is key to ensuring inter-operability and ease of reuse by residents and researchers alike.
 -   Open Baltimore and all of the city's online services need to put a higher priority on accessibility and education.
 -   Open Baltimore needs meaningful and useful opportunities for feedback that can be used by both city staff and residents.
-
