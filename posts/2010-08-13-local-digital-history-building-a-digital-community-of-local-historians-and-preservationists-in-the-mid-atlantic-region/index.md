@@ -1,0 +1,16 @@
+---
+title: "Local Digital History: Building a digital community of local historians and preservationists in the Mid-Atlantic Region"
+date: "2010-08-13"
+categories: 
+  - "digital-history"
+tags: 
+  - "blogging"
+  - "digital-history"
+  - "midatlantic"
+---
+
+_I wrote this post back in May as a proposal for [THATCamp Prime](http://thatcamp.org/2010/)._
+
+After publishing [a very specific proposal on the National Register nomination form](http://thatcamp.org/2010/reimagining-the-national-register-nomination-form/) a few days ago and then writing a whole new title up on the whiteboard this morning, I wanted to follow up with a second post to try to articulate a few of the broad questions that I hope we can discuss during the session on local digital history tomorrow morning. While I am excited by the many compelling projects presented by scholars at THATCamp, I am also concerned that many public historians and local historians–particularly in the context of small museums, historical societies, and preservation advocacy organizations–are not engaged in this conversation. Too many of these small institutions–institutions which I believe play a vital role in the interpretation and preservation of our shared heritage–are just struggling to build and maintain an effective online presence, let alone engage in more creative and innovative projects involving digitization, linked data, mobile technology, geodata, data visualization, augmented reality, etc. In addition, to the extent that a conversation between local historians and preservationists is taking place online at all, it is found largely on e-mail lists, e.g. [H-DC](http://www.h-net.org/%7Edclist/), [H-Maryland](http://www.h-net.org/%7Emaryland/), and [H-Local](http://www.h-net.org/%7Elocal/), rather than in the context of more public or accessible forums. The challenges for historic sites and heritage organizations seeking deeper engagement with digital technology include conservative institutional contexts, the limited digital literacy of many established local historians, and the pressing demands of programs and advocacy that might crowd out opportunities for innovation. If these barriers can be overcome, I believe there are clear opportunities for using digital media to develop deeper partnerships between scholars and practitioners, share best practices for low resource and limited capacity organizations, and experiment with new interpretive strategies linking multiple sites or themes.
+
+I’m hoping that others are concerned with these same issues and we can have a discussion that might outline both the challenges and opportunities for local digital historians in greater detail. For the “[More hack, less yak](http://twitter.com/digitalhumanist/status/13951336741)” aspect of this session, I’d be curious if others might be interested in starting a group blog for local digital historians working in (or on) the broader [Mid-Atlantic region](http://en.wikipedia.org/wiki/Mid-Atlantic_states). I’m imaging a place where we can highlight a few of the many interesting projects that are taking place in our neighborhoods, cities, and regions, share tools and methods, and just talk about all of the awesome historic places, people, and events that make up our shared local heritage.

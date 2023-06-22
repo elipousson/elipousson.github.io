@@ -1,0 +1,22 @@
+---
+title: "After the demolition of Tusculum in 1891 \"bits of its woodwork were eagerly gathered up for souvenirs\""
+date: "2015-01-01"
+---
+
+![Tusculum, c. 1891. Maryland Historical Society, \[SVF\] via [MdHS Photographs Tumblr](http://mdhsphotographs.tumblr.com/post/63675940105/tusculum-home-of-the-delphian-club-northeast-of)](https://historicsprawl.files.wordpress.com/2015/01/tusculum-mdhs-svf.jpg?w=660)
+
+I spent a good part of the winter holidays researching the history of vacancy, demolition and salvage in Baltimore. When local builders tore down many of the city's earliest homes in the decades after the Civil War, it is likely that laborers salvaged bricks and metal for reuse or resale. The January 1891 demolition of Tusculum, however, stood out as an early example of salvage for sentiment rather than simple material utility:
+
+> "'Gwynn's Folly,' the quaint but pretentious little building of classic architecture which stood for years in Bank lane, between St. Paul and Calvert streets, has disappeared before the march of modern improvement, and nothing now marks the spot where it stood but a pile of rubbish and the five stately elms that for nearly a century had guarded it... The ancient edifice had a warm place in the hearts of many a white-haired Baltimoreans, and pieces of its mantel-pieces and bits of its woodwork were eagerly gathered up for souvenirs... About 1830 the improvements of the neighborhood shut in and hid the 'Tusculum' and converted Bank lane into an alley... For a number of years past a family of colored people have made the noted Tusculum their home."
+
+William Gwynn, newspaper owner and editor, commissioned architect Robert Carey Long to design and build Tusculum around 1820. Gwynn hosted meetings of a group that became known as the Delphian Club up through the 1830s. Carleton Jones described a typical scene in a 1991 article:
+
+> "On the right night, visitors to Tusculum's part of town (just northwest of Calvert and Baltimore streets) can hear sounds of revelry within the mansion. Inside, you are likely to find an all-male gang of revelers that makes up the closest Baltimore ever came to having a literary club in the style of new and old England. Gwynn brings them together around the tobacco canisters and the punch bowls and they are hoisting toasts merrily here and there. For a time, they even run their own literary journal.
+> 
+> In the crowd occasionally is Harvard College luminary Jared Sparks, who had come to Baltimore to be ordained at the famous Unitarian service where William Ellery Channing would define Unitarian faith. Also among Tusculum habitues are two men destined to write the verses to two of the most immortal clinkers of 19th century sentimental song: Sam Woodworth ("The Old Oaken Bucket") and John Howard Payne ("Home, Sweet Home").
+> 
+> Gwynn's perennial guests dubbed themselves the Delphian Club, and luminaries of the day flocked to get in the act -- legal giant William Wirt, who trained eminent men; attorney William Pinckney, whose practice dominated many Supreme Court cases of the day; John Pendleton Kennedy, author of the novel "Swallow Barn," and often characterized as the James Fenimore Cooper of Maryland; and John Neal, who created the nation's first nationally important sporting magazine."
+
+* * *
+
+_Sources: [“A Noted Old Dwelling Torn Down,”](http://search.proquest.com/hnpbaltimoresun/docview/535286267/abstract/92526BAEBF7848EDPQ/76?accountid=10750)_ The Sun (1837-1988)_, January 27, 1891; ["Remembering A Literary Lane,"](http://articles.baltimoresun.com/1991-02-10/features/1991041195_1_baltimore-streets-bank-of-baltimore-new-sense) Baltimore Sun, February 10, 1991, Carleton Jones._
