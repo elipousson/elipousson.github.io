@@ -1,0 +1,64 @@
+- title: Baltimore’s Civil Rights Heritage
+  date: '2019-07-01'
+  categories:
+  - Historic preservation
+  - Baltimore
+  path: https://baltimoreheritage.github.io/civil-rights-heritage/
+  description: A National Register of Historic Places Multiple Property Documentation
+    Form documenting the historic context for the African American Civil Rights movement
+    in Baltimore.
+  image: /projects/images/baltimore-civil-rights-heritage.jpeg
+- title: feltr
+  categories:
+  - R package
+  - R
+  path: https://elipousson.github.io/feltr
+  description: A R package for accessing the Felt public API.
+  image: /projects/images/feltr-logo.png
+  tags: sf
+- title: getdata
+  date: '2023-06-12'
+  categories:
+  - R package
+  - R
+  path: https://elipousson.github.io/getdata
+  description: A R package for accessing and working with spatial data for locations.
+  image: /projects/images/getdata-logo.png
+- title: mapbaltimore
+  date: '2023-06-12'
+  categories:
+  - R package
+  - R
+  - Baltimore
+  - Open data
+  path: https://elipousson.github.io/mapbaltimore
+  description: A R package for accessing to local open data in Baltimore, Maryland.
+  image: /projects/images/mapbaltimore-logo.png
+- title: maplayer
+  date: '2023-06-12'
+  categories:
+  - R package
+  - R
+  path: https://elipousson.github.io/maplayer
+  description: A R package for making maps with ggplot2 and sf.
+  image: /projects/images/maplayer-logo.png
+  tags: ggplot2
+- title: sfext
+  date: '2023-06-12'
+  categories:
+  - R package
+  - R
+  path: https://elipousson.github.io/sfext
+  description: A R package extending the sf package.
+  image: /projects/images/sfext-logo.png
+  tags: sf
+- title: Explore Baltimore Heritage
+  date: '2019-07-01'
+  categories:
+  - Public history
+  - Baltimore
+  path: https://explore.baltimoreheritage.org
+  description: A collection of stories about historic places in Baltimore built using
+    the Curatscape web and mobile app framework.
+  image: /projects/images/explore-baltimoreheritage-logo.png
+
