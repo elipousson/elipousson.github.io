@@ -2,17 +2,17 @@
 title: "Vernacular Modernism: Jo-Rich Developers' Arcola Knolls"
 date: "2013-07-17"
 categories: 
-  - "architectural-history"
-  - "Maryland"
-  - "mid-century-modern"
-  - "montgomery-county"
-  - "silver-spring"
+  - "architectural history"
 tags: 
-  - "arcola-knolls"
+  - "Maryland"
+  - "Mid-century Modern"
+  - "Silver Spring"
+  - "Montgomery County"
+  - "Arcola Knolls"
   - "jo-rich-developers"
   - "joseph-arnold-depagnier"
   - "residential-development"
-  - "wheaton"
+  - "Wheaton"
 ---
 
 _I wrote this post back in 2010 but took it down after judging it a bit too personal and not my strongest writing. I recently received a comment from someone who grew up in Arcola Knolls looking for more information about the development so I wanted to re-post with a few minor edits from the original._

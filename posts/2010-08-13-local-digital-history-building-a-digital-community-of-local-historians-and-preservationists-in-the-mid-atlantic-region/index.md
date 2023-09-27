@@ -2,10 +2,10 @@
 title: "Local Digital History: Building a digital community of local historians and preservationists in the Mid-Atlantic Region"
 date: "2010-08-13"
 categories: 
-  - "digital-history"
+  - "digital history"
 tags: 
   - "blogging"
-  - "digital-history"
+  - "digital history"
   - "midatlantic"
 ---
 

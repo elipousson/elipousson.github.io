@@ -3,7 +3,7 @@ title: "Reading the Middle Branch Case Studies"
 date: "2011-12-06"
 categories: 
   - "Baltimore City"
-  - "landscape-history"
+  - "landscape history"
   - "Maryland"
   - "public history"
 ---

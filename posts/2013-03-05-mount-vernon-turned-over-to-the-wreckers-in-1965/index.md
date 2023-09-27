@@ -3,7 +3,7 @@ title: "Mount Vernon \"turned over to the wreckers\" in 1965"
 date: "2013-03-05"
 categories: 
   - "Baltimore City"
-  - "historic-preservation"
+  - "historic preservation"
   - "Maryland"
   - "neighborhood history"
 ---

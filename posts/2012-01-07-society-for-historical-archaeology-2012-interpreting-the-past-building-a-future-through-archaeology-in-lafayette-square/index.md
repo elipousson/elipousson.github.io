@@ -4,7 +4,7 @@ date: "2012-01-07"
 categories: 
   - "archaeology"
   - "Baltimore City"
-  - "landscape-history"
+  - "landscape history"
   - "Maryland"
 ---
 

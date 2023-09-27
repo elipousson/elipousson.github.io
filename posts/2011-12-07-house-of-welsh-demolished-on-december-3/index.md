@@ -2,7 +2,7 @@
 title: "House of Welsh demolished on December 3"
 date: "2011-12-07"
 categories: 
-  - "architectural-history"
+  - "architectural history"
   - "Baltimore City"
   - "Maryland"
   - "neighborhood history"

@@ -2,7 +2,7 @@
 title: "Reimagining the National Register Nomination Form"
 date: "2010-08-12"
 categories: 
-  - "historic-preservation"
+  - "historic preservation"
 ---
 
 _This post originally appeared as [a proposal for THATCamp Prime 2010](http://thatcamp.org/2010/reimagining-the-national-register-nomination-form/)._

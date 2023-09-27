@@ -2,7 +2,7 @@
 title: "Blue Book (1920) - J.G. Valiant Company Advertisements"
 date: "2012-06-04"
 categories: 
-  - "architectural-history"
+  - "architectural history"
   - "Baltimore City"
   - "Maryland"
 ---

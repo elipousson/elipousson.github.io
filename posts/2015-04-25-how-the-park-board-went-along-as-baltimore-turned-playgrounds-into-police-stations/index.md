@@ -2,9 +2,9 @@
 title: "How the Park Board \"went along\" as Baltimore turned playgrounds into police stations"
 date: "2015-04-25"
 categories: 
-  - "architectural-history"
+  - "architectural history"
   - "Baltimore City"
-  - "landscape-history"
+  - "landscape history"
 ---
 
 ::: column-page

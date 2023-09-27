@@ -2,7 +2,7 @@
 title: "Notes on Urban Renewal in Baltimore - No. 2"
 date: "2012-07-02"
 categories: 
-  - "architectural-history"
+  - "architectural history"
   - "Baltimore City"
   - "Maryland"
   - "modern"

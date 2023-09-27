@@ -2,7 +2,7 @@
 title: "\"Branch Bank To Be Marked By New Look\""
 date: "2015-05-18"
 categories: 
-  - "architectural-history"
+  - "architectural history"
   - "Baltimore City"
 tags: 
   - "baltimoremodernismproject"

@@ -2,7 +2,7 @@
 title: "Mapping Baltimore Deco (1984)"
 date: "2012-09-29"
 categories: 
-  - "architectural-history"
+  - "architectural history"
   - "Baltimore City"
   - "Maryland"
 ---

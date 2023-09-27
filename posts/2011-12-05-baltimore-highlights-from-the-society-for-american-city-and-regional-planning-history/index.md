@@ -2,9 +2,9 @@
 title: "Baltimore highlights from the Society for American City and Regional Planning History"
 date: "2011-12-05"
 categories: 
-  - "architectural-history"
+  - "architectural history"
   - "Baltimore City"
-  - "digital-history"
+  - "digital history"
   - "Maryland"
   - "neighborhood history"
 ---

@@ -2,9 +2,9 @@
 title: "Throw away your architectural dictionary or Why preservationists should be using (and contributing) to Wikipedia"
 date: "2011-04-14"
 categories: 
-  - "architectural-history"
+  - "architectural history"
 tags: 
-  - "architectural-history"
+  - "architectural history"
   - "wikipedia"
 ---
 

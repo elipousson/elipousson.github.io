@@ -3,7 +3,7 @@ title: "Race and Place in Baltimore Neighborhoods at the American Studies Associ
 date: "2011-11-29"
 categories: 
   - "Baltimore City"
-  - "historic-preservation"
+  - "historic preservation"
   - "Maryland"
   - "public history"
 ---

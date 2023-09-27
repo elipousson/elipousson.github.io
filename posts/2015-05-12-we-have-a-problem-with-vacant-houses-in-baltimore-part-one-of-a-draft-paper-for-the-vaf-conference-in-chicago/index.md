@@ -2,7 +2,7 @@
 title: "We have a problem with vacant houses in Baltimore. Part one of a draft paper for the VAF Conference in Chicago."
 date: "2015-05-12"
 categories: 
-  - "architectural-history"
+  - "architectural history"
   - "Baltimore City"
 title-block-banner: "images/4-crop-original-original.jpg"
 ---

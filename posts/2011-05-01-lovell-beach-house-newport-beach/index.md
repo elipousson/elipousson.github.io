@@ -2,7 +2,7 @@
 title: "Lovell Beach House, Newport Beach"
 date: "2011-05-01"
 categories: 
-  - "architectural-history"
+  - "architectural history"
   - "modern"
   - "travel"
 tags: 

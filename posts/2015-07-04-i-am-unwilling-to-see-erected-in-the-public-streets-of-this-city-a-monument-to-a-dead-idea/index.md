@@ -2,12 +2,12 @@
 title: "\"I am unwilling to see erected in the public streets of this city a monument to a dead idea\""
 date: "2015-07-04"
 categories: 
-  - "art-history"
+  - "art history"
   - "Baltimore City"
   - "Maryland"
 tags: 
-  - "civil-war"
-  - "confederate-memorials"
+  - "Civil War"
+  - "Confederate memorials"
 title-block-banner: "images/28393-nypl1.jpeg"
 ---
 

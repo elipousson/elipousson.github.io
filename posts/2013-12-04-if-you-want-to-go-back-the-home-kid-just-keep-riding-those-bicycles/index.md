@@ -2,7 +2,7 @@
 title: "\"If you want to go back the Home, kid, just keep riding those bicycles.\""
 date: "2013-12-04"
 categories: 
-  - "baltimore-bike-history"
+  - "bike history"
   - "Baltimore City"
 ---
 
