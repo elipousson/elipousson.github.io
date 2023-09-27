@@ -4,7 +4,7 @@ date: "2012-06-03"
 categories: 
   - "Baltimore City"
   - "Maryland"
-  - "public-history"
+  - "public history"
 ---
 
 ![From a "Development plan for the Maryland State governmental center in Baltimore, Maryland," 1969. [Archive.org](http://archive.org/stream/developmentplanf153bvict#page/n81/mode/1up)](images/statecenter.jpg)

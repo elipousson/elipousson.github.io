@@ -2,7 +2,7 @@
 title: "Hampton National Historic Site"
 date: "2011-12-05"
 categories: 
-  - "baltimore-county"
+  - "Baltimore County"
   - "Maryland"
 ---
 

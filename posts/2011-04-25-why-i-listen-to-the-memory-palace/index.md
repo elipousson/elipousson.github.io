@@ -2,7 +2,7 @@
 title: "Why I listen to The Memory Palace"
 date: "2011-04-25"
 categories: 
-  - "public-history"
+  - "public history"
 ---
 
 I'm a devoted listener of the short podcast [The Memory Palace](http://thememorypalace.us/), created and produced by Nate DiMeo. If you haven't heard the show before, a few of my favorites include [The Messrs. Craft](http://thememorypalace.us/2009/07/episode-14-the-messrs-craft-2/)\-- the incredible story of [Ellen and William Craft's](http://en.wikipedia.org/wiki/Ellen_and_William_Craft) escape from slavery to freedom, [OMG!!! JKP!!!](http://thememorypalace.us/2010/04/episode-29-omg-jkp/)\-- a fast-paced lesson on President James K. Polk, and the tragic [400 Words for 79th Street](http://thememorypalace.us/2009/12/episode-23-400-words-for-79th-street/). For me, part of the show's appeal has always been how it works as both an engaging podcast and an example of accessible public history. I was intrigued to read [Nate DiMeo's](http://transom.org/?p=16011) [behind the scenes look at the production of the show](http://transom.org/?p=16011) contrasting his approach to story telling with a narrower approach that might be more typical for historians--

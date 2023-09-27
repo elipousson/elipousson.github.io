@@ -2,9 +2,9 @@
 title: "'I feel that this is my country and that I shall never go out of it alive.'"
 date: "2013-12-07"
 categories: 
-  - "baltimore-county"
+  - "Baltimore County"
   - "Maryland"
-  - "public-history"
+  - "public history"
 tags: 
   - "bmorehistoric"
   - "baltimore"

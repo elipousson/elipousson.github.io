@@ -5,7 +5,7 @@ categories:
   - "Baltimore City"
   - "historic-preservation"
   - "Maryland"
-  - "public-history"
+  - "public history"
 ---
 
 _This past October, I had the privilege of participating in a panel organized by Dr. Nicole King at the [American Studies Association](http://www.theasa.net/) Annual Meeting in Baltimore, along with Ms. Linda Shopes, Dr. Denise Meringolo and Dr. Ed Orser. The theme of the panel -- Baltimore City as Laboratory: Transformations of Urban Neighborhoods through Public History Programming -- helped frame a discussion on how our work  used "public history programming to address complex issues of identity and social justice in urban space" led by  Linda Shopes, an editor of the influential 1991 [The Baltimore Book: New Views of Local History](http://openlibrary.org/books/OL8668735M/The_Baltimore_Book). I wrote the following short piece highlighting our work with the Race and Place in Baltimore Neighborhoods project where I had the chance to work closely with both Linda and Ed on the development of tour programs and a website (still in development)._

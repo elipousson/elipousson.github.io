@@ -3,7 +3,7 @@ title: "Before Freddie Gray: A History of Police Violence in Baltimore"
 date: "2015-04-24"
 categories: 
   - "Baltimore City"
-  - "research-notes"
+  - "research notes"
 tags: 
   - "blacklivesmatter"
   - "freddiegray"

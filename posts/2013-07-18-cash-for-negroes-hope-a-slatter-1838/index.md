@@ -3,7 +3,7 @@ title: "\"CASH FOR NEGROES\" - Hope A. Slatter, 1838"
 date: "2013-07-18"
 categories: 
   - "Baltimore City"
-  - "public-history"
+  - "public history"
 tags: 
   - "hope-h-slatter"
   - "howard-street"

@@ -2,7 +2,7 @@
 title: "Reading historical fiction and histories in 2011"
 date: "2012-02-18"
 categories: 
-  - "public-history"
+  - "public history"
 ---
 
 With the help of a new Kindle last winter, I've finished more books in 2011 than I have in years and I thought I might share a few recommendations and highlights. I've been especially excited to discover my own love of historical fiction. In the past year I read the first three novels in the [Flashman series](http://en.wikipedia.org/wiki/Harry_Paget_Flashman) by George MacDonald Fraser, the three [Baroque Cycle](http://en.wikipedia.org/wiki/Baroque_Cycle) novels by Neal Stephenson, and both The Anubis Gates and Declare by Tim Powers. Although Neal Stephenson and Tim Powers freely mix historical with fantastical details and characters, I was thrilled by how both authors managed to pull me into a version of the past and create a rich sense of place through their writing.

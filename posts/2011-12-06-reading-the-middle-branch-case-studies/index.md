@@ -5,7 +5,7 @@ categories:
   - "Baltimore City"
   - "landscape-history"
   - "Maryland"
-  - "public-history"
+  - "public history"
 ---
 
 A few months back, I stumbled across a whole series of posts from 2008-2009 that Baltimore designer and educator Fred Scharmen wrote for a project he called the [Middle Branch Case Studies](http://w-as.net/#893343/Middle-Branch-Case-Studies). For folks outside of Baltimore, the Middle Branch is a shallow estuary of the Patapsco near the Baltimore City line. Fred's mix of informal ethnographic reflection and thoughtful research make great reading for anyone interested in a few of Baltimore's more marginal landscapes.

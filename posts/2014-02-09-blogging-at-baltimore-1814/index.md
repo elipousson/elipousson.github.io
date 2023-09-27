@@ -3,7 +3,7 @@ title: "Blogging at Baltimore 1814"
 date: "2014-02-09"
 categories: 
   - "Baltimore City"
-  - "baltimore-county"
+  - "Baltimore County"
   - "digital-history"
 ---
 

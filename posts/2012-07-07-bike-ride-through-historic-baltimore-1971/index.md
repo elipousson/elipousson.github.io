@@ -5,7 +5,7 @@ categories:
   - "Baltimore City"
   - "Maryland"
   - "neighborhood history"
-  - "public-history"
+  - "public history"
 ---
 
 [![](images/bikeride-1971.jpg "bikeride-1971")](http://historicsprawl.files.wordpress.com/2012/07/bikeride-1971.jpg)While researching the history of the Shot Tower Industrial Park this morning, I stumbled across a unexpected and delightful account of a historic bike tour from May 16, 1971. In "Bike Ride Through Historic Baltimore," writer Jack Dawson, who also worked as the sports director and evening news sports anchor for WMAR-TV, describes his morning bike ride with the Coleman family, across Downtown, Fell's Point, and South Baltimore to Fort McHenry. The group set off at set off at 8:15 am with Dawson riding a borrowed three-speed Schwinn, a bit unsteadily at first, explaining that he "hadn't ridden a bicycle for any distance for at least 15 years." Jill Coleman had mapped out the route for a "bike hike" organized by the Maryland Commission on Physical Fitness for the following Sunday. The full piece can be found in the ProQuest Historical Newspapers database through [the Pratt Library website](http://www.prattlibrary.org/research/database/?sbj=998) but I've pulled a few excerpts:
